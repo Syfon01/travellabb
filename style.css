@@ -3,7 +3,7 @@ header{
     height:810px;
     background:url(img/image1.png);
 }
-.p-36{
+.p-36a{
     font-size: 36px;
     font-weight: bold;
     color: white;
@@ -144,16 +144,16 @@ font-weight: bold;
 .tra{
 background-color: #F35353;
 color: white;
+transform: rotateY(0deg);
+transform-style: preserve-3d;
 }
 .para{
     color: white;
     height: 200px;
     background-color: #F35353;
-    /* transform: skew(10deg,10deg); */
-	/* -webkit-transform: skew(180deg); */
-	   /* -moz-transform: skew(200deg); */
-	     /* -o-transform: skew(20deg); */
-
+    transform: skewX(-10deg);
+    border: 3px solid white;
+	
 }
 .trap{
     color: white;
