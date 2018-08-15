@@ -1,7 +1,8 @@
 header{
     width: 100%;
-    height:810px;
+    height:812px;
     background:url(img/image1.png);
+    z-index: -1;
 }
 .p-36a{
     font-size: 36px;
@@ -16,14 +17,53 @@ header{
     padding: 20px 75px;;
 
 }
-.overlag{
+.social{
+    list-style: none;
+    display: inline-block;
+    border-radius:30px;
+     width: 50px;
+     height: 50px;
+    border:3px solid #C4C4C4;
+    text-align: center;
+    color:#C4C4C4;
+    font-size: 32px;
+}
+
+.head{
+    z-index:+5;
+}
+a.nav-link{
+    color:#AC3535 !important;
+}
+
+  .overlag{
     position: absolute;
-    background-color:rgba(4, 15, 113, 0.6);
+    
     width: 100%;
-    height: 120%;
-    opacity: 0.6;
+    
+    opacity: 0.2;
+    
+    background-image:linear-gradient( 180deg, rgba(4, 15, 113, 0.6),rgba(4, 15, 113, 0.8) 40%,  #fff 72%);
+       
+    height: 1000px;
 
 }
+.overlag:after{
+
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 1;
+        height: 30%;
+        width: 100%;
+        background: #fff;
+        border-top-left-radius: 100% 20%;
+        border-top-right-radius: 100% 90%;
+        
+        bottom: -1%;
+        user-select: none;
+      }
+
 .oval{
     height: 690px;
     background: url('img/Ellipse.png')
@@ -54,6 +94,13 @@ header{
     z-index: +2;
   
 }
+ol.breadcrumb{
+    background-color: transparent!important;
+}
+.breadcrumb-item{
+    color:white !important;
+
+}
 .icon2{
 
     height:280px;
@@ -66,6 +113,10 @@ header{
     background-color:white;  
     
  
+}
+.btn-search{
+    background-color: #EE4739;
+    color: white;
 }
 .color{
     background: #F0594D;
@@ -97,7 +148,7 @@ font-size: 18px;
 }
 ul{
     list-style: none;
-    padding:0px; 
+    /* padding:0px;  */
 }
 ul li{
     color: #828282;
@@ -146,13 +197,32 @@ background-color: #F35353;
 color: white;
 transform: rotateY(0deg);
 transform-style: preserve-3d;
+padding:0px 50px;
+margin: 0px 0px;
 }
+.tra:after{
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #F35353;
+    transform-origin: bottom left;
+    -ms-transform: skew(-30deg, 0deg);
+    -webkit-transform: skew(-30deg, 0deg);
+    transform: skew(-30deg, 0deg);
+}
+
 .para{
     color: white;
-    height: 200px;
+    /* height: 200px; */
     background-color: #F35353;
     transform: skewX(-10deg);
-    border: 3px solid white;
+    border: 1px solid white;
+    text-emphasis: none;
 	
 }
 .trap{
@@ -161,6 +231,8 @@ transform-style: preserve-3d;
     background-color: #F35353
 
 }
+
+
 .p-24{
     font-weight: bold;
     font-size: 24px;
